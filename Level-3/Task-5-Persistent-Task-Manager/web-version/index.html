@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Persistent Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📋 Persistent Task Manager</h1>
+
+    <p>Task Manager with persistent browser storage</p>
+
+    <div class="form">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Task title"
+        >
+
+        <textarea
+            id="description"
+            placeholder="Task description"
+        ></textarea>
+
+        <select id="status">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+
+    </div>
+
+    <h2>Tasks</h2>
+
+    <div id="taskList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

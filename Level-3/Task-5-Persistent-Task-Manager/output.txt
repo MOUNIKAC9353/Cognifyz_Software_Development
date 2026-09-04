@@ -1,0 +1,35 @@
+======================================
+   COGNIFYZ PERSISTENT TASK MANAGER
+======================================
+
+Tasks loaded successfully from file.
+
+========== MENU ==========
+1. Create Task
+2. View Tasks
+3. Update Task
+4. Delete Task
+5. Exit
+==========================
+
+Enter your choice: 2
+
+========== TASK LIST ==========
+--------------------------------
+Task ID     : 1
+Title       : Study Java
+Description : Practice File I/O
+Status      : Pending
+--------------------------------
+
+========== MENU ==========
+1. Create Task
+2. View Tasks
+3. Update Task
+4. Delete Task
+5. Exit
+==========================
+
+Enter your choice: 5
+
+Thank you for using Persistent Task Manager!
