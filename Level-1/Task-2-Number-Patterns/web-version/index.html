@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Pattern Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="icon">🔢</div>
+
+        <h1>Number Pattern Generator</h1>
+
+        <p class="subtitle">
+            Generate simple number patterns using loops
+        </p>
+
+        <div class="input-section">
+
+            <label for="rows">Number of Rows</label>
+
+            <input
+                type="number"
+                id="rows"
+                min="1"
+                max="20"
+                placeholder="Enter rows (1-20)"
+            >
+
+            <label for="pattern">Select Pattern</label>
+
+            <select id="pattern">
+                <option value="pyramid">Number Pyramid</option>
+                <option value="triangle">Number Triangle</option>
+                <option value="square">Number Square</option>
+            </select>
+
+            <div class="buttons">
+                <button onclick="generatePattern()">
+                    Generate Pattern
+                </button>
+
+                <button class="clear-btn" onclick="clearPattern()">
+                    Clear
+                </button>
+            </div>
+
+        </div>
+
+        <div id="message"></div>
+
+        <div class="output-section">
+
+            <h2>Pattern Output</h2>
+
+            <pre id="output">
+Your generated pattern will appear here.
+            </pre>
+
+        </div>
+
+        <div class="footer">
+            <p>Level 1 • Task 2 • Cognifyz Technologies</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
