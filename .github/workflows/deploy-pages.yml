@@ -1,4 +1,4 @@
-name: Deploy Number Guessing Game
+name: Deploy Cognifyz Tasks to GitHub Pages
 
 on:
   push:
@@ -11,25 +11,29 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+    runs-on: ubuntu-latest
 
-      - name: Setup GitHub Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './Level-1/Task-1-Text-Based-Game/web-version'
+          path: './site'
 
       - name: Deploy to GitHub Pages
         id: deployment
