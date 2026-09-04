@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📋 Task Manager</h1>
+
+    <p class="subtitle">
+        Create, Read, Update and Delete Tasks
+    </p>
+
+    <div class="form">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Task title"
+        >
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Task description"
+        >
+
+        <select id="status">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button onclick="addTask()">
+            ➕ Create Task
+        </button>
+
+    </div>
+
+    <div id="message"></div>
+
+    <h2>Task List</h2>
+
+    <div id="taskList">
+        <p class="empty">
+            No tasks available.
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
