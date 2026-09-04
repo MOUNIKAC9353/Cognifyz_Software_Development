@@ -1,0 +1,39 @@
+======================================
+       NUMBER GUESSING GAME
+======================================
+
+I have selected a number between 1 and 100.
+You have 7 attempts to guess it.
+
+Enter your guess: 50
+Too low! Try a higher number.
+Attempts remaining: 6
+
+Enter your guess: 24
+Too low! Try a higher number.
+Attempts remaining: 5
+
+Enter your guess: 85
+Too low! Try a higher number.
+Attempts remaining: 3
+
+Enter your guess: 100
+Too high! Try a lower number.
+Attempts remaining: 2
+
+Enter your guess: 95
+Too low! Try a higher number.
+Attempts remaining: 1
+
+Enter your guess: 99
+Too high! Try a lower number.
+Attempts remaining: 0
+
+Game Over!
+The correct number was: 96
+
+Do you want to play again? (yes/no): no
+
+======================================
+       Thank you for playing!
+======================================
