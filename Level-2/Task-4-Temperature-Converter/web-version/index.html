@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌡️ Temperature Converter</h1>
+
+        <p>
+            Convert temperatures between Celsius and Fahrenheit
+        </p>
+
+        <div class="converter">
+
+            <label for="temperature">
+                Enter Temperature
+            </label>
+
+            <input
+                type="number"
+                id="temperature"
+                placeholder="Enter temperature"
+                step="any"
+            >
+
+            <label for="conversion">
+                Choose Conversion
+            </label>
+
+            <select id="conversion">
+
+                <option value="cToF">
+                    Celsius → Fahrenheit
+                </option>
+
+                <option value="fToC">
+                    Fahrenheit → Celsius
+                </option>
+
+            </select>
+
+            <button onclick="convertTemperature()">
+                Convert
+            </button>
+
+            <button class="clear" onclick="clearResult()">
+                Clear
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
